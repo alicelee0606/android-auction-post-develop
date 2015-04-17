@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="camera_panel_background">#2C2C2C</color>
+    <color name="action_bar_background">#FE5D55</color>
+    <color name="background_magenta">#FE5D55</color>
+    <color name="background_gray">#F2F2F2</color>
+    <color name="text_dark">#4A4A4A</color>
+    <color name="text_gray">#B6B6B6</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="tag_yellow">#F9C122</color>
+    <color name="tag_blue">#509FE0</color>
+    <color name="tag_green">#1DBEB6</color>
+    <color name="tag_pink">#FF8296</color>
+    <color name="tag_purple">#9D7CE8</color>
+    <color name="tag_gray">#A7A8B4</color>
+    <color name="stream_background">#FFFFFF</color>
+
+</resources>

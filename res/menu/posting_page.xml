@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yahoo.mobile.android.auctionpost.PostingPageActivity" >
+
+    <item
+        android:id="@+id/posting_page_action_ok"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/btn_ok"
+        android:title="@string/action_ok"/>
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yahoo.mobile.android.auctionpost.StreamActivity" >
+    
+    <item
+        android:id="@+id/btn_to_profile"
+        android:showAsAction="always"
+        android:icon="@drawable/but_to_profile"
+        android:title="" />
+    
+</menu>

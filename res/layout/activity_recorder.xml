@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/recorder_surface_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recorder_bottom" >
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+	    style="@style/GenericProgressBackground"
+	    android:id="@+id/loadingPanel_video"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    <ProgressBar
+	        android:id="@+id/progress_bar_video_processing"
+	        style="@style/GenericProgressIndicator"
+	        android:visibility="gone" />
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/video_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/camera_panel_background" >
+
+        <!-- <ImageButton
+            android:id="@+id/btn_recorder_frontcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_selfie" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_take_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_record" />
+
+        <ImageButton
+            android:id="@+id/btn_switch_to_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_take_video"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/switch_record" />
+        
+    </RelativeLayout>
+
+    <com.yahoo.mobile.android.auctionpost.videorecorder.ProgressView
+        android:id="@+id/recorder_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_progress_margin"
+        android:layout_above="@id/video_panel_container" />
+
+</RelativeLayout>

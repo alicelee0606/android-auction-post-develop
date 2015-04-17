@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/yahoo/mobile/android/auctionpost/CameraActivity.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/FFmpegPreviewActivity.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/FFmpegRecorderActivity.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/PhotoTakingActivity.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/fragments/ItemPageFragment.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/videorecorder/NewFFmpegFrameRecorder.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/videorecorder/ProgressView.java=UTF-8
+encoding//src/com/yahoo/mobile/android/auctionpost/videorecorder/Util.java=UTF-8
+encoding/<project>=UTF-8

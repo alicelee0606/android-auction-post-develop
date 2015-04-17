@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yahoo.mobile.android.auctionpost.PostingPageActivity" >
+
+    <item
+        android:id="@+id/profile_page_log_out"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/log_out"/>
+
+</menu>

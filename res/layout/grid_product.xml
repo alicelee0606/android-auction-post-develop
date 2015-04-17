@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/profile_card" >
+
+    <!--  <ImageView-->
+    <com.yahoo.mobile.android.auctionpost.SquareImageView
+        android:id="@+id/profile_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--  <Switch
+        android:id="@+id/sale_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_product_image"
+        android:checked="true"
+        android:textOff="Off"
+        android:textOn="On" />-->
+        
+    <RelativeLayout
+        android:id="@+id/product_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/profile_product_image"
+        android:background="@color/text_white" >
+        
+        <ToggleButton
+            android:id="@+id/sale_state"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginLeft="@dimen/product_button_spacing"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_switch"
+            android:textColor="@android:color/transparent"
+            android:checked="false"/>
+    
+        <ImageButton
+            android:id="@+id/del_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf ="@id/sale_state"
+            android:src = "@drawable/but_delete" />
+        
+    </RelativeLayout>
+        
+    
+</RelativeLayout>

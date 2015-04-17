@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true" >
+	
+    </FrameLayout>     
+
+    
+    <RelativeLayout
+	    style="@style/GenericProgressBackground"
+	    android:id="@+id/loadingPanel_camera"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    <ProgressBar
+	        android:id="@+id/progress_bar_image_processing"
+	        style="@style/GenericProgressIndicator"
+	        android:visibility="gone" />
+	</RelativeLayout>
+        
+    
+    <RelativeLayout
+        android:id="@+id/camera_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/camera_panel_background" >
+
+        <!-- <ImageButton
+            android:id="@+id/btn_camera_frontcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_selfie" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_photo_active" />
+
+        <ImageButton
+            android:id="@+id/btn_switch_to_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_take_photo"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/switch_photo" />
+        
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/layout_camera_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_progress_margin"
+        android:layout_above="@id/camera_panel_container"
+        android:background="@color/camera_panel_background" /> -->
+
+</RelativeLayout>

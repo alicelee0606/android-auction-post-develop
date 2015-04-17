@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/preview_video_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextureView
+            android:id="@+id/preview_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+
+        <!--
+              <ImageView
+            android:id="@+id/preview_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_play_big"
+            android:layout_centerInParent="true"
+            android:scaleType="center"/>
+        -->
+    </FrameLayout>
+
+    <!--
+    <RelativeLayout 
+        android:id="@+id/preview_image_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recorder_bottom"
+        android:layout_marginTop="10dp" >
+        
+        <ImageView
+		    android:id="@+id/preview_image"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stream_pic_product01" />        
+    </RelativeLayout>
+    -->
+
+
+    <!-- RelativeLayout for different color tags -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="40dp"
+        android:rotation="-10" >
+
+        <ImageView
+            android:id="@+id/img_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag_color_1"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/camera_panel_background" >
+
+        <GridView
+            android:id="@+id/choose_tag_color_grid"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="6"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/posting_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

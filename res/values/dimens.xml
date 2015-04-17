@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">38px</dimen>
+    <dimen name="activity_vertical_margin">38px</dimen>
+    <dimen name="video_progress_margin">10dp</dimen>
+
+    <dimen name="product_button_spacing">7dp</dimen>
+    <dimen name="stream_card_padding">3dp</dimen>
+    <dimen name="stream_eye_padding">16dp</dimen>
+    <dimen name="number_browse">12sp</dimen>
+    <dimen name="item_page_text_small">18sp</dimen>
+
+</resources>

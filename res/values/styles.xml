@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="@android:actionBarStyle">@style/BaseActionBar</item>
+        <item name="@android:editTextStyle">@style/BaseEditText</item>
+        <item name="@android:textColor">@android:color/white</item>
+        <item name="@android:windowBackground">@color/background_gray</item>
+    </style>
+
+    <style name="BaseActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="@android:background">@color/background_magenta</item>
+    </style>
+
+    <style name="BaseEditText" parent="@android:style/Widget.Holo.EditText">
+        <item name="@android:textColor">@color/text_dark</item>
+    </style>
+    
+    <style name="Dialog_loading" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Dialog_loading_noDim" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="GenericProgressBackground" parent="android:Theme">
+    <item name="android:layout_width">fill_parent</item>    
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:background">@android:color/transparent</item>    
+    <item name="android:gravity">center</item>  
+	</style>
+	<style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:indeterminate">true</item> 
+	</style>
+
+</resources>
